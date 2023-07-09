@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             AdditionTest();
+            SubtractionTest();
         }
 
         static void AdditionTest()
@@ -19,6 +20,29 @@
             if(actual == expected)
             {
                 Console.WriteLine("Addition Test Succeeded");
+            }
+            else
+            {
+                Console.WriteLine("Addition Test Failed");
+            }
+        }
+
+        static void SubtractionTest()
+        {
+            float x = 20;
+            float y = 10;
+            char mockOp = '-';
+
+            var expected = x - y;
+            var actual = CalculatorApp.Subtraction(x, mockOp, y);
+
+            if (actual == expected)
+            {
+                Console.WriteLine("Subtraction Test Succeeded");
+            }
+            else
+            {
+                Console.WriteLine("Subtraction Test Failed");
             }
         }
     }
