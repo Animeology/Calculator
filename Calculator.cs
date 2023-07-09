@@ -10,7 +10,7 @@
         Console.WriteLine("Input two numbers and the operation (+, -, *, /, %)");
 
         float x = Convert.ToSingle(Console.ReadLine());
-        char op = Convert.ToChar(Console.ReadLine());
+        char op = Convert.ToChar(Console.ReadLine()!);
         float y = Convert.ToSingle(Console.ReadLine());
 
         Calculate(x, op, y);
