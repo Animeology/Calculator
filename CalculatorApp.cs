@@ -1,4 +1,4 @@
-﻿public class Calculator
+﻿public class CalculatorApp
 {
     static void Main(string[] args)
     {
