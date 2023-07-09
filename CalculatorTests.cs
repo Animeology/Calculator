@@ -7,6 +7,7 @@
             AdditionTest();
             SubtractionTest();
             MultiplicationTest();
+            DivisionTest();
         }
 
         static void AdditionTest()
@@ -63,6 +64,25 @@
             else
             {
                 Console.WriteLine("Multiplication Test Failed");
+            }
+        }
+
+        static void DivisionTest()
+        {
+            float x = 100;
+            float y = 5;
+            char mockOp = '/';
+
+            var expected = x / y;
+            var actual = CalculatorApp.Division(x, mockOp, y);
+
+            if (actual == expected)
+            {
+                Console.WriteLine("Division Test Succeeded");
+            }
+            else
+            {
+                Console.WriteLine("Division Test Failed");
             }
         }
 
