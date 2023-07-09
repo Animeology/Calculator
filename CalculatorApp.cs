@@ -40,9 +40,16 @@
                 break;
         }
     }
-    static void Addition(float x, char op, float y)
+
+    static bool isTesting = true;
+
+    public static float Addition(float x, char op, float y)
     {
-        Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x + y);
+        if(isTesting == false) 
+        { 
+            Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x + y);
+        }
+        return x + y;
     }
 
     static void Subtraction(float x, char op, float y)
