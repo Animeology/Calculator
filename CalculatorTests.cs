@@ -8,6 +8,7 @@
             SubtractionTest();
             MultiplicationTest();
             DivisionTest();
+            ModulusTest();
         }
 
         static void AdditionTest()
@@ -86,5 +87,23 @@
             }
         }
 
+        static void ModulusTest()
+        {
+            float x = 100;
+            float y = 5;
+            char mockOp = '%';
+
+            var expected = x % y;
+            var actual = CalculatorApp.Modulus(x, mockOp, y);
+
+            if (actual == expected)
+            {
+                Console.WriteLine("Modulus Test Succeeded");
+            }
+            else
+            {
+                Console.WriteLine("Modulus Test Failed");
+            }
+        }
     }
 }
