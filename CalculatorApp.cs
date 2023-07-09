@@ -10,8 +10,8 @@
         Console.WriteLine("Input two numbers and the operation (+, -, *, /, %)");
 
         float x = Convert.ToSingle(Console.ReadLine());
-        char op = Convert.ToChar(Console.ReadLine()!);
         float y = Convert.ToSingle(Console.ReadLine());
+        char op = Convert.ToChar(Console.ReadLine()!);
 
         Calculate(x, op, y);
     }
@@ -41,7 +41,7 @@
         }
     }
 
-    static bool isTesting = true;
+    static bool isTesting = false;
 
     public static float Addition(float x, char op, float y)
     {
@@ -74,7 +74,15 @@
     {
         if (isTesting == false)
         {
-            Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x / y);
+            if(y != 0)
+            {
+                Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x / y);
+            }
+            else
+            {
+                Console.WriteLine("Error cannot divide by 0");
+            }
+
         }
         return x / y;
     }
