@@ -61,18 +61,30 @@
         return x - y;
     }
 
-    static void Multiplication(float x, char op, float y)
+    public static float Multiplication(float x, char op, float y)
     {
-        Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x * y);
+        if(isTesting == false)
+        {
+            Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x * y);
+        }
+        return (x * y);
     }
 
-    static void Division(float x, char op, float y)
+    public static float Division(float x, char op, float y)
     {
-        Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x / y);
+        if (isTesting == false)
+        {
+            Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x / y);
+        }
+        return x / y;
     }
 
-    static void Modulus(float x, char op, float y)
+    public static float Modulus(float x, char op, float y)
     {
-        Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x % y);
+        if (isTesting == false)
+        {
+            Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x % y);
+        }
+        return x % y;
     }
 }
