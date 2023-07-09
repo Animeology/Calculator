@@ -6,6 +6,7 @@
         {
             AdditionTest();
             SubtractionTest();
+            MultiplicationTest();
         }
 
         static void AdditionTest()
@@ -45,5 +46,25 @@
                 Console.WriteLine("Subtraction Test Failed");
             }
         }
+
+        static void MultiplicationTest()
+        {
+            float x = 5;
+            float y = 5;
+            char mockOp = '*';
+
+            var expected = x * y;
+            var actual = CalculatorApp.Multiplication(x, mockOp, y);
+
+            if (actual == expected)
+            {
+                Console.WriteLine("Multiplication Test Succeeded");
+            }
+            else
+            {
+                Console.WriteLine("Multiplication Test Failed");
+            }
+        }
+
     }
 }
