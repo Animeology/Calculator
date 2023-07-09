@@ -21,23 +21,47 @@
         switch (op)
         {
             case '+':
-                Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x + y);
+                Addition(x, op, y);
                 break;
             case '-':
-                Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x - y);
+                Subtraction(x, op, y);
                 break;
             case '*':
-                Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x * y);
+                Multiplication(x, op, y);
                 break;
             case '/':
-                Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x / y);
+                Division(x, op, y);
                 break;
             case '%':
-                Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x % y);
+                Modulus(x, op, y);
                 break;
             default:
                 Console.WriteLine("Not a valid operation!");
                 break;
         }
+    }
+    static void Addition(float x, char op, float y)
+    {
+        Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x + y);
+    }
+
+    static void Subtraction(float x, char op, float y)
+    {
+        Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x - y);
+    }
+
+    static void Multiplication(float x, char op, float y)
+    {
+        Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x * y);
+    }
+
+    static void Division(float x, char op, float y)
+    {
+        Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x / y);
+    }
+
+    static void Modulus(float x, char op, float y)
+    {
+        Console.WriteLine("{0}{1}{2} = {3}", x, op, y, x % y);
     }
 }
