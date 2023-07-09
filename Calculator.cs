@@ -1,11 +1,11 @@
 ﻿public class Calculator
 {
-    public static void Main(string[] args)
+    static void Main(string[] args)
     {
         Run();
     }
 
-    public static void Run()
+    static void Run()
     {
         Console.WriteLine("Input two numbers and the operation (+, -, *, /, %)");
 
@@ -16,7 +16,7 @@
         Calculate(x, op, y);
     }
 
-    public static void Calculate(float x, char op, float y)
+    static void Calculate(float x, char op, float y)
     {
         switch (op)
         {
