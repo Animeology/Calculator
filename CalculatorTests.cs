@@ -22,13 +22,9 @@
             var expected = x + y;
             var actual = CalculatorApp.Addition(x, mockOp, y);
 
-            if(actual == expected)
+            if(actual != expected)
             {
-                Console.WriteLine("Addition Test Succeeded");
-            }
-            else
-            {
-                Console.WriteLine("Addition Test Failed");
+                throw new Exception("Addition Test Failed");
             }
         }
 
@@ -41,13 +37,9 @@
             var expected = x - y;
             var actual = CalculatorApp.Subtraction(x, mockOp, y);
 
-            if (actual == expected)
+            if (actual != expected)
             {
-                Console.WriteLine("Subtraction Test Succeeded");
-            }
-            else
-            {
-                Console.WriteLine("Subtraction Test Failed");
+                throw new Exception("Subtraction Test Failed");
             }
         }
 
@@ -60,13 +52,9 @@
             var expected = x * y;
             var actual = CalculatorApp.Multiplication(x, mockOp, y);
 
-            if (actual == expected)
+            if (actual != expected)
             {
-                Console.WriteLine("Multiplication Test Succeeded");
-            }
-            else
-            {
-                Console.WriteLine("Multiplication Test Failed");
+                throw new Exception("Multiplication Test Failed");
             }
         }
 
@@ -79,13 +67,9 @@
             var expected = x / y;
             var actual = CalculatorApp.Division(x, mockOp, y);
 
-            if (actual == expected)
+            if (actual != expected)
             {
-                Console.WriteLine("Division Test Succeeded");
-            }
-            else
-            {
-                Console.WriteLine("Division Test Failed");
+                throw new Exception("Division Test Failed");
             }
         }
 
@@ -98,13 +82,9 @@
             var expected = x % y;
             var actual = CalculatorApp.Modulus(x, mockOp, y);
 
-            if (actual == expected)
+            if (actual != expected)
             {
-                Console.WriteLine("Modulus Test Succeeded");
-            }
-            else
-            {
-                Console.WriteLine("Modulus Test Failed");
+                throw new Exception("Modulus Test Failed");
             }
         }
     }

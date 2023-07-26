@@ -46,7 +46,7 @@
             }
         }
 
-        static bool isTesting = false;
+        static bool isTesting = true;
 
         public static float Addition(float x, char op, float y)
         {
