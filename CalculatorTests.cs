@@ -1,8 +1,10 @@
-﻿namespace Calculator
+﻿namespace CalculatorTests
 {
+    using Calculator;
+
     public class CalculatorTests
     {
-        static void Main(string[] args)
+        public static void RunAllTests()
         {
             AdditionTest();
             SubtractionTest();
